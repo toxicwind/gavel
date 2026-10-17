@@ -9,7 +9,7 @@
 # 🔨 gavel
 
 **The auction market for dispatches.** Gavel runs an auctioneer and a field of
-bidders over a single squawk message channel: the auctioneer posts a job, the
+bidders over a single [squawk message channel](../mesh/squawk/): the auctioneer posts a job, the
 bidders bid, and the best bid (price × reputation) wins and owns the dispatch.
 Every message is HMAC-signed on the frozen `market/v1` wire.
 
@@ -23,7 +23,7 @@ more work, and the auctioneer can calibrate cost/latency/reliability per job.
 
 - **Auctioneer** — posts jobs, collects bids, awards to the best (price × reputation).
 - **Bidders** — fleets of agents with budgets, profiles, and reputation ledgers (`bidder-flash`, `bidder-mule`, `bidder-specialist`).
-- **HMAC-signed wire** — the frozen `market/v1` protocol over the squawk channel; body covered, no tampering.
+- **HMAC-signed wire** — the frozen `market/v1` protocol over the [squawk channel](../mesh/squawk/); body covered, no tampering.
 - **Reputation system** — past performance updates bidder reputation; reputation is a first-class input to award, not a garnish.
 - **E2E harness** — `e2e/` runs real auctioneer × bidder pools against tasks with real acceptance checks.
 - **Calibration** — `calibration.json` tunes the award curve.
@@ -75,9 +75,9 @@ gavel/
 ## The wire
 
 `market.py` implements the frozen protocol (WIRE.md): a public `market` squawk
-channel, standard squawk frontmatter, body = human header + `market/v1` marker
-+ YAML block; **HMAC covers the whole body**. The wire lives in one place so
-the auctioneer and every bidder stay in lockstep.
+channel on the [squawk bus](../mesh/squawk/), standard squawk frontmatter, body =
+human header + `market/v1` marker + YAML block; **HMAC covers the whole body**.
+The wire lives in one place so the auctioneer and every bidder stay in lockstep.
 
 ## License & security
 
