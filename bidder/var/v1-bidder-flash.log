@@ -1,0 +1,35 @@
+[00:42:29] bidder bidder-flash up | profile=flash caps=['shell', 'text'] | channel=market
+[00:42:29] task t-e2e-auct-1: window closed (24.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (19.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (14.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (9.3s > 5s), skip
+[00:42:29] inotify watching /home/toxic/.shingle/squawk-root/market
+Setting up watches.
+Watches established.
+posted #9 -> market/0009-bidder-flash-bid-t-v1-live-001.md
+[00:42:31] task t-v1-live-001#1: BID conf=0.780 cost=2.5 eta=2.5s (post 34ms) -> #9
+[00:42:41] task t-v1-live-001#1: ASSIGNED to me, executing
+posted #13 -> market/0013-bidder-flash-result-t-v1-live-001.md
+[00:42:41] task t-v1-live-001#1: RESULT done dur=0.0s -> #13
+posted #15 -> market/0015-bidder-flash-bid-t-e2e-auct-2.md
+[00:42:41] task t-e2e-auct-2#1: BID conf=0.568 cost=2.5 eta=2.5s (post 63ms) -> #15
+[00:43:06] task t-e2e-auct-2#1: ASSIGNED to me, executing
+posted #21 -> market/0021-bidder-flash-result-t-e2e-auct-2.md
+[00:43:06] task t-e2e-auct-2#1: RESULT failed dur=0.0s -> #21
+posted #24 -> market/0024-bidder-flash-bid-t-e2e-auct-2.md
+[00:43:06] task t-e2e-auct-2#2: BID conf=0.452 cost=2.5 eta=2.5s (post 57ms) -> #24
+posted #27 -> market/0027-bidder-flash-bid-t-e2e-auct-3.md
+[00:43:28] task t-e2e-auct-3#1: BID conf=0.452 cost=2.5 eta=2.5s (post 65ms) -> #27
+posted #35 -> market/0035-bidder-flash-bid-t-e2e-auct-2.md
+[00:43:31] task t-e2e-auct-2#3: BID conf=0.452 cost=2.5 eta=2.5s (post 158ms) -> #35
+posted #42 -> market/0042-bidder-flash-bid-t-e2e-auct-2.md
+[00:43:56] task t-e2e-auct-2#4: BID conf=0.452 cost=2.5 eta=2.5s (post 108ms) -> #42
+posted #46 -> market/0046-bidder-flash-bid-t-e2e-auct-4.md
+[00:44:03] task t-e2e-auct-4#1: BID conf=0.525 cost=2.5 eta=2.5s (post 114ms) -> #46
+posted #51 -> market/0051-bidder-flash-bid-t-e2e-auct-4.md
+[00:44:21] task t-e2e-auct-4#2: BID conf=0.525 cost=2.5 eta=2.5s (post 84ms) -> #51
+[00:44:29] task t-e2e-auct-4#2: ASSIGNED to me, executing
+posted #58 -> market/0058-bidder-flash-result-t-e2e-auct-4.md
+[00:44:29] task t-e2e-auct-4#2: RESULT failed dur=0.0s -> #58
+posted #60 -> market/0060-bidder-flash-bid-t-e2e-auct-4.md
+[00:44:29] task t-e2e-auct-4#3: BID conf=0.427 cost=2.5 eta=2.5s (post 57ms) -> #60

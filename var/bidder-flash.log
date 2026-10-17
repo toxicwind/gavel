@@ -1,0 +1,11 @@
+[00:36:10] bidder bidder-flash up | profile=flash caps=['shell', 'text']
+[00:36:10] inotify watching /home/toxic/.shingle/squawk-root/bid-market
+Setting up watches.
+Watches established.
+posted #2 -> bid-market/0002-bidder-flash-bid-flash-task-e2e-1.md
+[00:36:36] task task-e2e-1: BID conf=0.802 cost=403ms eta=409ms (post 61ms) -> #2
+[00:36:48] task task-e2e-1: ASSIGNED to me, executing
+posted #5 -> bid-market/0005-bidder-flash-result-bidder-flash-task-e2e-1.md
+[00:36:48] task task-e2e-1: RESULT success=True dur=5ms -> #5
+posted #8 -> bid-market/0008-bidder-flash-bid-flash-task-e2e-2.md
+[00:37:01] task task-e2e-2: BID conf=0.387 cost=1260ms eta=1263ms (post 58ms) -> #8

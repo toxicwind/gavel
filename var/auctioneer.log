@@ -1,0 +1,124 @@
+[auctioneer] watching /home/toxic/.shingle/squawk-root/market (inotify)
+[auctioneer] watching /home/toxic/.shingle/squawk-root/market (inotify)
+[auctioneer] OPEN t-e2e-auct-1 attempt 1 window 5s
+[auctioneer] no bids for t-e2e-auct-1 attempt 1
+posted #2 -> market/0002-auctioneer-task-t-e2e-auct-1-r2.md
+[auctioneer] re-auction t-e2e-auct-1 attempt 2 (no-bids)
+[auctioneer] OPEN t-e2e-auct-1 attempt 2 window 5s
+[auctioneer] BID rejected t-e2e-auct-1/bidder-a: stale-attempt
+[auctioneer] BID rejected t-e2e-auct-1/bidder-b: stale-attempt
+[auctioneer] no bids for t-e2e-auct-1 attempt 2
+posted #5 -> market/0005-auctioneer-task-t-e2e-auct-1-r3.md
+[auctioneer] re-auction t-e2e-auct-1 attempt 3 (no-bids)
+[auctioneer] OPEN t-e2e-auct-1 attempt 3 window 5s
+[auctioneer] no bids for t-e2e-auct-1 attempt 3
+posted #6 -> market/0006-auctioneer-task-t-e2e-auct-1-r4.md
+[auctioneer] re-auction t-e2e-auct-1 attempt 4 (no-bids)
+[auctioneer] OPEN t-e2e-auct-1 attempt 4 window 5s
+[auctioneer] no bids for t-e2e-auct-1 attempt 4
+posted #7 -> market/0007-auctioneer-cancel-t-e2e-auct-1.md
+posted #10172 -> fleet/10172-auctioneer-market-digest.md
+[auctioneer] CANCEL t-e2e-auct-1: no-bids after 4 rounds
+[auctioneer] OPEN t-v1-live-001 attempt 1 window 10s
+[auctioneer] BID t-v1-live-001 bidder-flash conf=0.78 cost=2.52 eta=2.55 lat=60ms
+[auctioneer] BID t-v1-live-001 bidder-mule conf=0.708 cost=10.07 eta=10.1 lat=111ms
+posted #12 -> market/0012-auctioneer-assign-t-v1-live-001.md
+posted #10190 -> fleet/10190-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-v1-live-001 -> bidder-flash (score 0.874, 2 bids, attempt 1)
+posted #10191 -> fleet/10191-auctioneer-market-digest.md
+[auctioneer] RESULT t-v1-live-001 done winner=bidder-flash cal=1.000
+[auctioneer] OPEN t-e2e-auct-2 attempt 1 window 25s
+[auctioneer] BID t-e2e-auct-2 bidder-flash conf=0.568 cost=2.5 eta=2.51 lat=366ms
+[auctioneer] BID t-e2e-auct-2 bidder-a conf=0.9 cost=40.0 eta=100.0 lat=372ms
+[auctioneer] BID t-e2e-auct-2 bidder-mule conf=0.466 cost=10.01 eta=10.02 lat=416ms
+[auctioneer] BID t-e2e-auct-2 bidder-b conf=0.7 cost=20.0 eta=200.0 lat=428ms
+[auctioneer] BID t-e2e-auct-2 bidder-specialist conf=0.51 cost=6.01 eta=6.02 lat=467ms
+posted #20 -> market/0020-auctioneer-assign-t-e2e-auct-2.md
+posted #10222 -> fleet/10222-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-2 -> bidder-flash (score 0.772, 5 bids, attempt 1)
+posted #10223 -> fleet/10223-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-2 failed winner=bidder-flash cal=0.700
+posted #22 -> market/0022-auctioneer-task-t-e2e-auct-2-r2.md
+[auctioneer] re-auction t-e2e-auct-2 attempt 2 (task-failed)
+[auctioneer] OPEN t-e2e-auct-2 attempt 2 window 25s
+[auctioneer] BID t-e2e-auct-2 bidder-specialist conf=0.623 cost=6.01 eta=6.01 lat=348ms
+[auctioneer] BID t-e2e-auct-2 bidder-flash conf=0.452 cost=2.5 eta=2.51 lat=396ms
+[auctioneer] BID t-e2e-auct-2 bidder-mule conf=0.466 cost=10.01 eta=10.02 lat=451ms
+[auctioneer] OPEN t-e2e-auct-3 attempt 1 window 15s
+[auctioneer] BID t-e2e-auct-3 bidder-flash conf=0.452 cost=2.51 eta=2.52 lat=492ms
+[auctioneer] BID t-e2e-auct-3 bidder-specialist conf=0.623 cost=6.02 eta=6.03 lat=543ms
+[auctioneer] BID t-e2e-auct-3 bidder-mule conf=0.466 cost=10.04 eta=10.05 lat=593ms
+posted #30 -> market/0030-auctioneer-assign-t-e2e-auct-2.md
+posted #10246 -> fleet/10246-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-2 -> bidder-specialist (score 0.787, 3 bids, attempt 2)
+posted #10247 -> fleet/10247-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-2 failed winner=bidder-specialist cal=0.700
+posted #32 -> market/0032-auctioneer-task-t-e2e-auct-2-r3.md
+[auctioneer] re-auction t-e2e-auct-2 attempt 3 (task-failed)
+[auctioneer] OPEN t-e2e-auct-2 attempt 3 window 25s
+[auctioneer] BID t-e2e-auct-2 bidder-mule conf=0.466 cost=10.01 eta=10.01 lat=418ms
+[auctioneer] BID t-e2e-auct-2 bidder-specialist conf=0.5 cost=6.01 eta=6.01 lat=469ms
+[auctioneer] BID t-e2e-auct-2 bidder-flash conf=0.452 cost=2.5 eta=2.51 lat=519ms
+posted #36 -> market/0036-auctioneer-assign-t-e2e-auct-3.md
+posted #10274 -> fleet/10274-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-3 -> bidder-specialist (score 0.783, 3 bids, attempt 1)
+posted #10275 -> fleet/10275-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-3 done winner=bidder-specialist cal=0.745
+posted #38 -> market/0038-auctioneer-assign-t-e2e-auct-2.md
+posted #10297 -> fleet/10297-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-2 -> bidder-mule (score 0.697, 3 bids, attempt 3)
+posted #10298 -> fleet/10298-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-2 failed winner=bidder-mule cal=0.700
+posted #40 -> market/0040-auctioneer-task-t-e2e-auct-2-r4.md
+[auctioneer] re-auction t-e2e-auct-2 attempt 4 (task-failed)
+[auctioneer] OPEN t-e2e-auct-2 attempt 4 window 25s
+[auctioneer] BID t-e2e-auct-2 bidder-mule conf=0.366 cost=10.01 eta=10.01 lat=453ms
+[auctioneer] BID t-e2e-auct-2 bidder-flash conf=0.452 cost=2.5 eta=2.51 lat=503ms
+[auctioneer] BID t-e2e-auct-2 bidder-specialist conf=0.6 cost=6.01 eta=6.01 lat=554ms
+[auctioneer] OPEN t-e2e-auct-4 attempt 1 window 8s
+[auctioneer] BID t-e2e-auct-4 bidder-specialist conf=0.624 cost=6.0 eta=6.01 lat=179ms
+[auctioneer] BID t-e2e-auct-4 bidder-flash conf=0.525 cost=2.5 eta=2.51 lat=229ms
+[auctioneer] BID t-e2e-auct-4 bidder-mule conf=0.393 cost=10.0 eta=10.01 lat=279ms
+[auctioneer] BID t-e2e-auct-4 bidder-a conf=1.0 cost=0.01 eta=1.0 lat=331ms
+posted #49 -> market/0049-auctioneer-assign-t-e2e-auct-4.md
+posted #10307 -> fleet/10307-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-4 -> bidder-a (score 0.980, 4 bids, attempt 1)
+posted #10317 -> fleet/10317-auctioneer-market-digest.md
+[auctioneer] TIMEOUT t-e2e-auct-4 winner=bidder-a cal=0.700
+posted #50 -> market/0050-auctioneer-task-t-e2e-auct-4-r2.md
+[auctioneer] re-auction t-e2e-auct-4 attempt 2 (timeout)
+[auctioneer] OPEN t-e2e-auct-4 attempt 2 window 8s
+[auctioneer] BID t-e2e-auct-4 bidder-flash conf=0.525 cost=2.5 eta=2.51 lat=220ms
+[auctioneer] BID t-e2e-auct-4 bidder-mule conf=0.393 cost=10.01 eta=10.02 lat=262ms
+[auctioneer] BID t-e2e-auct-4 bidder-specialist conf=0.624 cost=6.01 eta=6.02 lat=317ms
+posted #54 -> market/0054-auctioneer-assign-t-e2e-auct-2.md
+posted #10318 -> fleet/10318-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-2 -> bidder-specialist (score 0.704, 3 bids, attempt 4)
+posted #10319 -> fleet/10319-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-2 failed winner=bidder-specialist cal=0.521
+posted #56 -> market/0056-auctioneer-cancel-t-e2e-auct-2.md
+posted #10320 -> fleet/10320-auctioneer-market-digest.md
+[auctioneer] CANCEL t-e2e-auct-2: task-failed after 4 rounds
+posted #57 -> market/0057-auctioneer-assign-t-e2e-auct-4.md
+posted #10332 -> fleet/10332-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-4 -> bidder-flash (score 0.628, 3 bids, attempt 2)
+posted #10333 -> fleet/10333-auctioneer-market-digest.md
+[auctioneer] RESULT t-e2e-auct-4 failed winner=bidder-flash cal=0.490
+posted #59 -> market/0059-auctioneer-task-t-e2e-auct-4-r3.md
+[auctioneer] re-auction t-e2e-auct-4 attempt 3 (task-failed)
+[auctioneer] OPEN t-e2e-auct-4 attempt 3 window 8s
+[auctioneer] BID t-e2e-auct-4 bidder-flash conf=0.427 cost=2.5 eta=2.51 lat=249ms
+[auctioneer] BID t-e2e-auct-4 bidder-mule conf=0.393 cost=10.01 eta=10.01 lat=299ms
+[auctioneer] BID t-e2e-auct-4 bidder-specialist conf=0.51 cost=6.01 eta=6.01 lat=349ms
+posted #63 -> market/0063-auctioneer-assign-t-e2e-auct-4.md
+posted #10343 -> fleet/10343-auctioneer-market-digest.md
+[auctioneer] ASSIGN t-e2e-auct-4 -> bidder-flash (score 0.550, 3 bids, attempt 3)
+posted #10344 -> fleet/10344-auctioneer-market-digest.md
+[auctioneer] TIMEOUT t-e2e-auct-4 winner=bidder-flash cal=0.343
+posted #64 -> market/0064-auctioneer-task-t-e2e-auct-4-r4.md
+[auctioneer] re-auction t-e2e-auct-4 attempt 4 (timeout)
+[auctioneer] OPEN t-e2e-auct-4 attempt 4 window 8s
+[auctioneer] no bids for t-e2e-auct-4 attempt 4
+posted #65 -> market/0065-auctioneer-cancel-t-e2e-auct-4.md
+posted #10353 -> fleet/10353-auctioneer-market-digest.md
+[auctioneer] CANCEL t-e2e-auct-4: no-bids after 4 rounds

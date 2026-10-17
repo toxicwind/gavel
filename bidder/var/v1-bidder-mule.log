@@ -1,0 +1,29 @@
+[00:42:29] bidder bidder-mule up | profile=mule caps=['shell', 'python', 'text'] | channel=market
+[00:42:29] task t-e2e-auct-1: window closed (24.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (19.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (14.4s > 5s), skip
+[00:42:29] task t-e2e-auct-1: window closed (9.3s > 5s), skip
+[00:42:29] inotify watching /home/toxic/.shingle/squawk-root/market
+Setting up watches.
+Watches established.
+posted #10 -> market/0010-bidder-mule-bid-t-v1-live-001.md
+[00:42:31] task t-v1-live-001#1: BID conf=0.708 cost=10.1 eta=10.1s (post 85ms) -> #10
+posted #17 -> market/0017-bidder-mule-bid-t-e2e-auct-2.md
+[00:42:41] task t-e2e-auct-2#1: BID conf=0.466 cost=10.0 eta=10.0s (post 114ms) -> #17
+posted #25 -> market/0025-bidder-mule-bid-t-e2e-auct-2.md
+[00:43:06] task t-e2e-auct-2#2: BID conf=0.466 cost=10.0 eta=10.0s (post 115ms) -> #25
+posted #29 -> market/0029-bidder-mule-bid-t-e2e-auct-3.md
+[00:43:28] task t-e2e-auct-3#1: BID conf=0.466 cost=10.0 eta=10.1s (post 165ms) -> #29
+posted #33 -> market/0033-bidder-mule-bid-t-e2e-auct-2.md
+[00:43:31] task t-e2e-auct-2#3: BID conf=0.466 cost=10.0 eta=10.0s (post 57ms) -> #33
+[00:43:56] task t-e2e-auct-2#3: ASSIGNED to me, executing
+posted #39 -> market/0039-bidder-mule-result-t-e2e-auct-2.md
+[00:43:56] task t-e2e-auct-2#3: RESULT failed dur=0.0s -> #39
+posted #41 -> market/0041-bidder-mule-bid-t-e2e-auct-2.md
+[00:43:56] task t-e2e-auct-2#4: BID conf=0.366 cost=10.0 eta=10.0s (post 57ms) -> #41
+posted #47 -> market/0047-bidder-mule-bid-t-e2e-auct-4.md
+[00:44:03] task t-e2e-auct-4#1: BID conf=0.393 cost=10.0 eta=10.0s (post 164ms) -> #47
+posted #52 -> market/0052-bidder-mule-bid-t-e2e-auct-4.md
+[00:44:21] task t-e2e-auct-4#2: BID conf=0.393 cost=10.0 eta=10.0s (post 128ms) -> #52
+posted #61 -> market/0061-bidder-mule-bid-t-e2e-auct-4.md
+[00:44:29] task t-e2e-auct-4#3: BID conf=0.393 cost=10.0 eta=10.0s (post 107ms) -> #61
