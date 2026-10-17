@@ -1,7 +1,7 @@
 [00:36:10] bidder bidder-specialist up | profile=specialist caps=['python', 'data']
-[00:36:10] inotify watching /home/toxic/.shingle/squawk-root/bid-market
+[00:36:10] inotify watching /home/toxic/.shingle/squawk-root/gavel
 Setting up watches.
 Watches established.
 [00:36:36] task task-e2e-1: no bid (profile mismatch)
-posted #7 -> bid-market/0007-bidder-specialist-bid-specialist-task-e2e-2.md
+posted #7 -> gavel/0007-bidder-specialist-bid-specialist-task-e2e-2.md
 [00:37:01] task task-e2e-2: BID conf=0.868 cost=3023ms eta=3026ms (post 13ms) -> #7

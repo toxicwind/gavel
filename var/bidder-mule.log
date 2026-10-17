@@ -1,8 +1,8 @@
 [00:36:10] bidder bidder-mule up | profile=mule caps=['shell', 'python', 'text']
-[00:36:10] inotify watching /home/toxic/.shingle/squawk-root/bid-market
+[00:36:10] inotify watching /home/toxic/.shingle/squawk-root/gavel
 Setting up watches.
 Watches established.
-posted #3 -> bid-market/0003-bidder-mule-bid-mule-task-e2e-1.md
+posted #3 -> gavel/0003-bidder-mule-bid-mule-task-e2e-1.md
 [00:36:36] task task-e2e-1: BID conf=0.717 cost=1612ms eta=1618ms (post 111ms) -> #3
-posted #9 -> bid-market/0009-bidder-mule-bid-mule-task-e2e-2.md
+posted #9 -> gavel/0009-bidder-mule-bid-mule-task-e2e-2.md
 [00:37:01] task task-e2e-2: BID conf=0.491 cost=5039ms eta=5042ms (post 108ms) -> #9
