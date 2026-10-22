@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# gavel — self-test gate (PASS/FAIL).
+# The auctioneer is a long-running daemon; the gate is the wire contract +
+# module integrity: all gavel python modules must compile and the market/v1
+# wire client must import cleanly. Does NOT launch the (infinite) auction.
+#
+# Gate 1: py_compile every python module (auctioneer, market, reputation/*,
+#         e2e/*, test/bidder_smoke).
+# Gate 2: `import market` resolves the WIRE_MARKER/CHANNEL constants.
+# Live auction run is verified separately under supervision (run-auctioneer.sh).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "== gavel check: start =="
+PY="${PY:-python3}"
+"$PY" - <<'EOF' || { echo "FAIL: python3 missing"; exit 1; }
+import sys
+EOF
+
+# Gate 1 — syntax gate over all python sources
+set +e
+out="$("$PY" -m py_compile auctioneer.py market.py post-task e2e/run_e2e.py test/bidder_smoke.py 2>&1)"
+rc=$?
+set -e
+echo "$out"
+[ "$rc" -eq 0 ] || { echo "FAIL: py_compile rc=$rc"; exit 1; }
+
+# reputation/ submodules compile
+set +e
+out="$("$PY" -m compileall -q reputation 2>&1)"
+rc=$?
+set -e
+[ "$rc" -eq 0 ] || { echo "FAIL: reputation compileall rc=$rc"; exit 1; }
+
+# Gate 2 — market/v1 wire contract resolves
+set +e
+out="$("$PY" -c 'import market; assert market.WIRE_MARKER=="market/v1"; assert market.CHANNEL=="market"; print("wire OK", market.WIRE_MARKER, market.CHANNEL)' 2>&1)"
+rc=$?
+set -e
+echo "$out"
+[ "$rc" -eq 0 ] || { echo "FAIL: market wire contract rc=$rc"; exit 1; }
+
+echo "== gavel check: PASS =="
+exit 0

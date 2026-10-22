@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# gavel — primary operation: run the agent-market auctioneer.
+# The auctioneer is a watchdog that watches the squawk MARKET_DIR for
+# bid/result wire messages (market/v1), sweeps, fires deadlines, and
+# reconciles the auction ledger continuously.
+#
+# It is a long-running daemon (inotify loop, KeyboardInterrupt to stop).
+# For supervised launches use run-auctioneer.sh; this is the no-fork gate.
+#
+# Usage:
+#   bin/run            # launch the auctioneer (blocks; Ctrl-C / SIGTERM to stop)
+#   bin/run check      # run the fast self-test gate instead
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+case "${1:-}" in
+  check) exec ./bin/check ;;
+  *)
+    # Ensure the squawk chat/relay roots exist before launching.
+    export SQUAWK_CHAT_ROOT="${SQUAWK_CHAT_ROOT:-/home/toxic/.shingle/squawk-root}"
+    export SQUAWK_CODE_DIR="${SQUAWK_CODE_DIR:-/home/toxic/estate/hatch/agents/ember/chat}"
+    mkdir -p "$SQUAWK_CHAT_ROOT/market" 2>/dev/null || true
+    exec python3 auctioneer.py
+    ;;
+esac
