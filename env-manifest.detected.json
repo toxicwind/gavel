@@ -1,0 +1,53 @@
+{
+  "product": "gavel",
+  "path": "/home/toxic/pens/ranch/products/gavel",
+  "files": 112,
+  "detected_at": "2026-10-30T06:11:06.820143Z",
+  "env_vars": {
+    "BLUE": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "ENV_FILE": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "FLEET_KEYS_DIR": [
+      "run-auctioneer.sh"
+    ],
+    "GREEN": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "HOME": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "INSTALL_DIR": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "SQUAWK_CHAT_ROOT": [
+      "run-auctioneer.sh"
+    ],
+    "SQUAWK_CODE_DIR": [
+      "run-auctioneer.sh"
+    ],
+    "TERMUX_VERSION": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "VENV_DIR": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "YELLOW": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "cost": [
+      "vendor/auction-agent11/src/auction_coordination/story.py"
+    ],
+    "example": [
+      "vendor/auction-agent11/tests/test_deployment_config.py"
+    ],
+    "home_path": [
+      "vendor/contract-net-router/install.sh"
+    ],
+    "registry_path": [
+      "vendor/contract-net-router/install.sh"
+    ]
+  }
+}
